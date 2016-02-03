@@ -6,6 +6,8 @@ var app = express();
 var routes = require('./routes/index');
 app.use('/', routes);
 
+app.use(express.static('public'));
+
 mongoose.connect('mongodb://localhost/cms');
 var db = mongoose.connection;
 db.on('open', function(cb){

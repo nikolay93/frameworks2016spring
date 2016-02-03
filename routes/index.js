@@ -14,8 +14,4 @@ router.get('/content', function(req, res) {
   })
 })
 
-router.get('/', function(req, res) {
-  res.send('Welcome');
-})
-
 module.exports = router;
