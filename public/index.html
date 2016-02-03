@@ -7,14 +7,18 @@
     <meta name="keywords" content="">
     <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css" />
 </head>
-<body>
+<body ng-controller='cmsController'>
 
   <h1>Welcome to my world</h1>
   
   <p>The answer is {{ 84/2 }} </p>
+  <p>Message is: {{ message }} </p>
+  <p>Data is: {{ content }} </p>
   
   <script src="libs/angular/angular.min.js"></script>
   <script src="js/app.module.js"></script>
+  <script src="js/app.controller.js"></script>
+  <script src="js/app.service.js"></script>
 
 </body>
 </html>
