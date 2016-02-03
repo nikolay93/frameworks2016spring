@@ -1,22 +1,17 @@
-var http = require('http');
+var express = require('express');
+var mongoose = require('mongoose');
 
-http.createServer(function(req, res){
-  res.writeHead(200, {'Content-Type': 'text/plain'});
-  res.end('Hello World from Node.js');
-  console.log('I have been hit');
-  console.log('It is your own fault');
-}).listen(3000);
+var app = express();
 
-http.createServer(function(req, res){
-  var method = req.method;
-  var url = req.url;
-  if(method === 'GET') {
-    if(url === '/content') {
-      res.write('Content has been fetched');
-    }
-    else {
-      res.write('Nothing happened on this day');
-    }
-    res.end();
-  }
-}).listen(4000);
+var routes = require('./routes/index');
+app.use('/', routes);
+
+mongoose.connect('mongodb://localhost/cms');
+var db = mongoose.connection;
+db.on('open', function(cb){
+  console.log('Database is running');
+});
+
+app.listen(3000, function(){
+  console.log("up and running");
+})
