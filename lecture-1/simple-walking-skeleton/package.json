@@ -1,0 +1,23 @@
+{
+  "name": "frameworks2016spring",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app-node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eaaa/frameworks2016spring.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eaaa/frameworks2016spring/issues"
+  },
+  "homepage": "https://github.com/eaaa/frameworks2016spring#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "mongoose": "^4.4.0"
+  }
+}

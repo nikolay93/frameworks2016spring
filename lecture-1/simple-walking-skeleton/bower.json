@@ -1,0 +1,22 @@
+{
+  "name": "frameworks2016spring",
+  "description": "",
+  "main": "app-node.js",
+  "authors": [
+    "Niels Henrik Juul Hansen <niha@eaaa.dk>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/eaaa/frameworks2016spring",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "angular": "^1.4.9"
+  }
+}

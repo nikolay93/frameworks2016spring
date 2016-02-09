@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app='mycms'>
+<head>
+    <title>Untitled Document</title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body ng-controller='cmsController'>
+  <h1>Hello from Angular</h1>
+  <p>The answer is {{ 84/2 }}</p>
+  <p>The message is: {{ message }}</p>
+  
+  <button class="btn btn-success" ng-click="getContent()">Get content</button>
+  <p ng-show="content">The content is: {{ content }}</p>
+    
+  <script src="libs/angular/angular.min.js"></script>
+  <script src="js/app.module.js"></script>
+  <script src="js/app.controller.js"></script>
+  <script src="js/app.service.js"></script>
+  
+</body>
+</html>
